@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formas de Pagamento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      color: #0056b3;
+    }
+
+    .payment-methods {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .payment-method {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .payment-method h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .buy-button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .buy-button:hover {
+      background-color: #218838;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+
+    .qr-code {
+      max-width: 200px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Formas de Pagamento</h1>
+    <p>Escolha a forma de pagamento que melhor se adapta às suas necessidades:</p>
+
+    <div class="payment-methods">
+      <div class="payment-method">
+        <h3>Curso Básico de Marketing Digital - R$6,99</h3>
+        <p>Pague com Pix e tenha acesso imediato ao curso!</p>
+        <!-- Inserir QR Code Pix -->
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://nubank.com.br/pagar/6x53s/rD5s67c5tH" alt="QR Code Pix" class="qr-code">
+        <p>Escaneie o QR Code com seu aplicativo de banco para pagar.</p>
+        <a href="https://nubank.com.br/pagar/6x53s/rD5s67c5tH" target="_blank" class="buy-button">Pagar com Pix</a>
+      </div>
+
+      <div class="payment-method">
+        <h3>Curso Avançado de Marketing Digital - R$19,90</h3>
+        <p>Pague com Cartão de Crédito em até 3x sem juros!</p>
+        <a href="https://nubank.com.br/pagar/n9y9g/6a0k67J6mJ" target="_blank" class="buy-button">Pagar com Cartão</a>
+      </div>
+
+      <div class="payment-method">
+        <h3>Mentoria Individual - Preço sob consulta</h3>
+        <p>Pague com PayPal e garanta seu horário com um especialista!</p>
+        <a href="https://www.paypal.com/paypalme/artedadisciplina07" target="_blank" class="buy-button">Pagar com PayPal</a>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-button">Voltar para a Página Inicial</a>
+  </div>
+</body>
+
+</html>
